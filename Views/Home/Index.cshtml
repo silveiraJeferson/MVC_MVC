@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        @Html.ActionLink("Cidades", "Index", "Cidades", null, new { @class = "btn btn-info" })
+        @Html.ActionLink("Bairros", "Index", "Bairros", null, new { @class = "btn btn-info" })
+    </div>
+    <div class="col-sm-2">
+        @Html.ActionLink("Tipos de Fornecedor", "Index", "TipoFornecedor", null, new { @class = "btn btn-info" })
+
+    </div>
+    <div class="col-sm-2">
+
+        @Html.ActionLink("Unidades", "Index", "Unidades", null, new { @class = "btn btn-info" })
+
+
+        @Html.ActionLink("Tipos de Pagamentos", "Index", "TipoPagamentos", null, new { @class = "btn btn-info" })
+    </div>
+</div>

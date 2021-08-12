@@ -1,0 +1,131 @@
+﻿@model MVC_MVC.VendaRegistro
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VendaRegistro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataVenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorSugerido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorSugerido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desconto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desconto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalVenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalVenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parcelas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parcelas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimVencimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimVencimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recebeu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recebeu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Juro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Juro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Restante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Restante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorFinal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPagamento.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoPagamento.Descricao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
